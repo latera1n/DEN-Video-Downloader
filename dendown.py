@@ -8,7 +8,7 @@ if __name__ == '__main__':
     '''Initialize arguments.'''
     init_url = sys.argv[1]
     init_url_prefix = init_url.split('/playlist')[0]
-    file_name_parts = init_url.split('/')[6].split('_')
+    file_name_parts = init_url.split('/')[8].split('_')
     file_name = file_name_parts[0] + '_' + file_name_parts[1][-8:]
 
     '''Resolve M3U8 playlist attributes.'''
